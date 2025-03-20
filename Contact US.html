@@ -1,0 +1,225 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container" >
+    <section class="contact">
+        <div class="contact1">
+            <h2>Contact US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos est laboriosam ipsum commodi ipsam fugit
+                ratione fuga natus laudantium quibusdam?</p>
+        </div>
+        <div class="h4">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>BB Mall Suite 310 3rd Floor
+                            Opposite NED University Road,<br> Karachi</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+92 213 4664523<br>+92 213 4177113<br>+92 213 4013353</p>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>mailto:info@waterworldpk.com</p>
+                            </div>
+                        </div>
+                            <div class="contactForm">
+                                <form class="UserForm">
+                                    <h2>Sned Message</h2>
+                                    <div class="inpuBox">
+                                        <label for="name">Name:</label>
+                                        <input type="name" id="name" name="name" placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="inpuBox">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter Your Email"><br>                                
+                                    </div>
+                                    <div class="inpuBox">
+                                        <label for="date">Date:</label>
+                                        <input type="date" id="date" name="date"><br>                                
+                                    </div>
+                                    <div class="inpuBox">
+                                        <label for="textarea">Textarea :</label>
+                                        <input type="textarea" id="textarea" name="textare" required="required"></textarea><br>
+                                    </div>
+                                    <div class="inpuBox">
+                                        <label for="message">Message:</label>
+                                        <textarea name="" required="required"></textarea>
+                                    </div>
+
+                                    <button type="button" onclick="displayInfo()">Sibmit</button>
+                                </form>
+                                <div id="result" class="result" style="display:none;">
+                                    <h2>Submitted Information</h2>
+                                    <p><strong>Name:</strong><span id="displayname"></span></p>
+                                    <p><strong>Email:</strong><span id="displayemail"></span></p>
+                                    <p><strong>Date:</strong><span id="displaydate"></span></p>
+                                    <p><strong>Textarea:</strong><span id="displaytextarea"></span></p>
+                                </div>
+                       
+    </section>
+    
+    
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+    }
+    body{
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+justify-content: center;
+align-items: center;
+display: flex;
+background: url(jpg7.jpg);
+background-size: cover;
+background-position: absolute;
+background-color: rgb(87, 81, 81);
+    }
+    input[type="text"]:hover, input[type="date"]:hover, textarea:hover {
+            border-color:darkseagreen;
+            box-shadow: 0 0 5px yellow;
+            transition: all 0.3s ease;
+            width: 10%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    b
+    .contact1{
+    font-weight: bold;
+        text-align: center;
+    }
+    body ::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+
+    }
+    section{
+        position:relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact1 h2{
+        font-size: 40px;
+        font-weight: bold;
+       
+    }
+    .contact1 p{
+        font-weight: 300;
+        
+    }
+    .contact
+    .h4{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .icon{
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+    }
+.icon i{
+    font-size: 20px;
+    line-height: 70px;
+}
+    .text h3{
+       color: #2d1dc0;
+       font-size: 1.4em;
+       margin-bottom: 5px;
+    }
+    .text p{
+color: rgb(14, 13, 13);
+font-size: 1em;
+    }
+    .ContactForm{
+        background-color: #fff;
+        padding: 40px;
+        width: 45%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .ContactForm h2{
+        font-weight: bold;
+       
+        color: #333;
+
+    }
+    .ContactForm .inpuBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ContactForm .inpuBox input
+    .ContactForm .inpuBox textarea{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+    }
+    .ContactForm .inpuBox label{
+        position: relative;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #333;
+
+    }
+    .ContactForm .inpuBox input
+    [type="Send Message"]{
+        width: 100%;
+        background-color: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 10px solid #00bcd4;
+            }
+</style>
+
+</html>
